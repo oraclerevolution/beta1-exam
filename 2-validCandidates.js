@@ -28,3 +28,23 @@ const users = [
 ]
 
 // Your code :
+const validCandidates = array => {
+  if(array[2] >= 18 && array[2] <= 25){
+      console.log(array)
+  }
+}
+ console.log(validCandidates(['kouame fofana','k.fofana@mail.co',19]))
+ console.log(validCandidates(['seydou koné','s.kone@mail.co',23]))
+ console.log(validCandidates(['abdoulaye koné','a.kone@mail.co',18]))
+ console.log(validCandidates(['fanta bamba', 'f.bamba@mail.co', 26]))
+ console.log(validCandidates(['karidja coulibaly', 'k.coulibaly@mail.co', 21]))
+ console.log(validCandidates(['siaka traoré', 's.traore@mail.co', 18]))
+ console.log(validCandidates(['ahou bakayoko', 'a.bakayoko@mail.co', 27]))
+ console.log(validCandidates(['naminata dao', 'n.dao@mail.co', 20]))
+ console.log(validCandidates(['naminata koné', 'n.kone@mail.co', 23]))
+ console.log(validCandidates(['awa coulibaly', 'a.coulibaly@mail.co', 17]))
+ console.log(validCandidates(['drissa coulibaly', 'd.coulibaly@mail.co', 20]))
+ console.log(validCandidates(['adjoua traoré', 'a.traore@mail.co', 25]))
+ console.log(validCandidates(['aya dao', 'a.dao@mail.co', 18]))
+ console.log(validCandidates(['siaka koné', 's.kone@mail.co', 22 ]))
+ console.log(validCandidates(['sita touré', 's.toure@mail.co', 24 ]))

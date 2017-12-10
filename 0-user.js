@@ -20,3 +20,8 @@
  */
 
 // Your code :
+const user = {
+    name: 'oraclerevolution',
+    email: 'mac.n.drix@gmail.com',
+    age:999
+}

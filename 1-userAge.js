@@ -7,6 +7,12 @@
  *
  */
 
-const user = {} // copy the one from the previous exercice
+const user = {
+ name: 'oraclerevolution',
+ email: 'mac.n.drix@gmail.com',
+ age:999
+} // copy the one from the previous exercice
 
 // Your code :
+const userAge = object => object.age
+console.log(userAge(user))
