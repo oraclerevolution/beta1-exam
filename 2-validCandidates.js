@@ -27,12 +27,14 @@ const users = [
   { name: 'sita touré', email: 's.toure@mail.co', age: 24 },
 ]
 
-// Your code :
+// Your code
+let i = 0
 const validCandidates = array => {
-  if(array[2] >= 18 && array[2] <= 25){
-      console.log(array)
-  }else{
-    return 0
+  for(i = 0; i < array.length - 1; i++){
+    if(array[i].age >= 18 && array[i].age <= 25){
+      console.log(array[i])
+    }
   }
 }
- console.log(validCandidates(users))
+
+console.log(validCandidates(users))
