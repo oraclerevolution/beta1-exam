@@ -26,15 +26,28 @@ const users = [
   { name: 'siaka koné', email: 's.kone@mail.co', age: 22 },
   { name: 'sita touré', email: 's.toure@mail.co', age: 24 },
 ]
-
-// Your code
-let i = 0
-const validCandidates = array => {
-  for(i = 0; i < array.length - 1; i++){
-    if(array[i].age >= 18 && array[i].age <= 25){
-      console.log(array[i])
-    }
-  }
+const isNumber = object => {
+  return object >= 18 && object <= 25
 }
 
-console.log(validCandidates(users))
+const filterByAge = item => {
+  if(isNumber(item.age)){
+    return true
+  }
+    
+    return false
+}
+
+let result = users.filter(filterByAge)
+console.log(result)
+// Your code without the function filter()
+// let i = 0
+// const validCandidates = array => {
+//   for(i = 0; i < array.length - 1; i++){
+//     if(array[i].age >= 18 && array[i].age <= 25){
+//       console.log(array[i])
+//     }
+//   }
+// }
+
+// console.log(validCandidates(users))
